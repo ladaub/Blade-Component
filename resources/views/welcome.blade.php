@@ -1,7 +1,9 @@
 @extends('layout')
 
-@section()
+@section('content')
 
-Hello dodo
+<h1 class="text-3xl font-bold">
+    Hello dodo
+  </h1>
 
 @endsection
