@@ -1,9 +1,8 @@
-@extends('layout')
+<x-layout>
 
-@section('content')
-
-<h1 class="text-3xl font-bold">
+ <x-section>
     Hello dodo
-  </h1>
+ </x-section>
 
-@endsection
+
+</x-layout>
