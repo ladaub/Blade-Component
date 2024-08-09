@@ -17,6 +17,7 @@ On va creer des props pour method et action
 
     @if (! in_array($method, ['GET', 'POST']))    
         @method($method) 
+        
     @endif
     {{-- @method('PATCH')  pour signifier que nous allons operé une modification --}}
 
