@@ -22,3 +22,5 @@ On va creer des props pour method et action
     {{-- @method('PATCH')  pour signifier que nous allons operé une modification --}}
 
     {{ $slot }}
+
+</form>

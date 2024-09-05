@@ -2,8 +2,9 @@
     <x-section>
 
         <x-form 
-            action="/comments/{{$comment->id }}" 
-            method="PATCH" {{-- ici on peut ajouter le PATCH car on est dans le form component --}}
+            method="PATCH"
+            action="/comments/{{ $comment->id }}"
+            {{-- ici on peut ajouter le PATCH car on est dans le form component --}}
         >
 
             {{-- 
@@ -36,7 +37,11 @@
             >
             Submit
         </button>
-    </div>
-</x-form>
+       </div>
+       
+    </x-form>
+    <x-form-button  action="/comments/{{ $comment->id }}" method="DELETE">
+      Delete
+   </x-form-button>
 </x-section>
 </x-layout>

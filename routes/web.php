@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/comments/{comment}/edit', function (Comment $comment) {
-    return view('comments.edit', ['comment => $comment']);
+    return view('comments.edit', ['comment' => $comment]);
 });
 
 Route::patch('/comments/{comment}', function (Comment $comment) {
@@ -17,4 +17,10 @@ Route::patch('/comments/{comment}', function (Comment $comment) {
     );
 
     return redirect("/comments/{$comment->id}/edit");
+});
+
+Route::delete('/comments/{comment}', function (Comment $comment) {
+    $comment->delete();
+
+    return redirect("/");
 });
