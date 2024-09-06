@@ -1,13 +1,13 @@
 {{-- En utilisant Alpine Js, on dit que cette div (x-data) open est false (donc ferme), 
 @click.away veut nimporte ou sur la page --}}
 
-@props(['alignment' = 'left'])
+@props(['alignment' => 'left'])
 
 @php
     $alignmentClass = [
         'left' => 'left-0',
         'right' => 'right-0'
-    ]
+];
 @endphp
 
 <div class="relative" x-data="{ open: false}" @click.away="open = false">
